@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+def find_lowest_element(lyst):
+    lyst.sort()
+    return lyst[0]
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+L_1 = [0, 12, 9, 13, 12, 0]
+L_2 = [1, 2, 3]
+L_3 = [5, -3, 9, -5]
+find_lowest_element(L_1)
+find_lowest_element(L_2)
+find_lowest_element(L_3)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
