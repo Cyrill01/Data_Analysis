@@ -25,11 +25,11 @@ for row in file:
     running_rank.append(float(row[8]))
 
 fig = plt.figure()
-plt.plot(total_rank, total_time, '.')
+plt.plot(total_rank, total_time, 'r--')
 plt.xlabel('total rank')
 plt.ylabel('total time in minutes')
 plt.savefig('total_rank_vs_total_time.png')
-# plt.show()
+plt.show()
 plt.cla()
 plt.plot(year_of_birth, total_time, '.')
 plt.xlabel('age')
