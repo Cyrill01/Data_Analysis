@@ -14,17 +14,15 @@ running_rank = []
 file = np.loadtxt('ironman.txt')
 
 for row in file:
-    '''I know its not part of the exersice but i dont want any 0 in my plots for obvious reasons. '''
-    if 0 not in row:
-        total_rank.append(float(row[0]))
-        year_of_birth.append(2010 - float(row[1]))
-        total_time.append(float(row[2]))
-        swimming_time.append(float(row[3]))
-        swimming_rank.append(float(row[4]))
-        cycling_time.append(float(row[5]))
-        cycling_rank.append(float(row[6]))
-        running_time.append(float(row[7]))
-        running_rank.append(float(row[8]))
+    total_rank.append(float(row[0]))
+    year_of_birth.append(2010 - float(row[1]))
+    total_time.append(float(row[2]))
+    swimming_time.append(float(row[3]))
+    swimming_rank.append(float(row[4]))
+    cycling_time.append(float(row[5]))
+    cycling_rank.append(float(row[6]))
+    running_time.append(float(row[7]))
+    running_rank.append(float(row[8]))
 
 fig = plt.figure()
 plt.plot(total_rank, total_time, '.')
