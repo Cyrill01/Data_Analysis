@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 file = np.loadtxt('ironman.txt')
-'''I know its not part of the exersice but I dont want any 0 in my data for obvious reason.'''
+# I know it's not part of the exersice, but I don't want any 0 in my data for obvious reason.
 file = np.delete(file, np.where((file == 0))[0], axis=0)
 
 total_rank = file[:, 0]
@@ -21,9 +21,10 @@ plt.xlabel('total rank')
 plt.ylabel('total time in minutes')
 plt.savefig('total_rank_vs_total_time.png')
 # plt.show()
+# I don't want to create a new figure each time, so I just clear the previous plot
 plt.cla()
 plt.plot(year_of_birth, total_time, '.')
-plt.xlabel('age')
+plt.xlabel('age in years')
 plt.ylabel('total time in minutes')
 plt.savefig('age_vs_total_time.png')
 # plt.show()
@@ -59,7 +60,7 @@ plt.savefig('total_time_hist.png')
 # plt.show()
 plt.cla()
 plt.hist(year_of_birth, range=[15, 75], bins=np.linspace(15, 75, 13))
-plt.xlabel('age')
+plt.xlabel('age in years')
 plt.ylabel('amount of people')
 plt.savefig('age_hist.png')
 # plt.show()
