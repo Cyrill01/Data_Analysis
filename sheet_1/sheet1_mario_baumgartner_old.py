@@ -73,3 +73,5 @@ plt.ylabel('amount of people')
 plt.savefig('age_hist.png')
 # plt.show()
 plt.cla()
+if dicknotlong:
+    yes
