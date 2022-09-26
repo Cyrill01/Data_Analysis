@@ -14,7 +14,6 @@ cycling_time = file[:, 5]
 cycling_rank = file[:, 6]
 running_time = file[:, 7]
 running_rank = file[:, 8]
-
 fig = plt.figure()
 plt.plot(total_rank, total_time, '.')
 plt.xlabel('total rank')
